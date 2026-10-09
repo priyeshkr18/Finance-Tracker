@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Pennywise</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+	<script src="script.js" defer></script>
+</head>
+
+<body>
+	<a class="skip" href="#main">Skip to content</a>
+	<div class="app">
+		<aside class="side">
+			<div class="brand">
+				<svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+					<rect width="34" height="34" rx="8" fill="#E53935" />
+					<circle cx="17" cy="17" r="9" fill="none" stroke="#fff" stroke-width="3" />
+					<rect x="15" y="5" width="4" height="9" fill="#B91C1C" />
+				</svg>
+				<div class="bt"><b>Pennywise</b><small>Take control of your money.</small></div>
+			</div>
+			<nav id="nav" aria-label="Main"></nav>
+			<button id="collapse" class="btn" type="button" aria-label="Collapse navigation">&laquo;</button>
+		</aside>
+		<div class="col">
+			<header class="top">
+				<h1 id="title">Overview</h1>
+				<input id="q" type="search" placeholder="Search transactions"
+					aria-label="Search descriptions, notes, categories and IDs">
+				<button id="bell" class="btn" type="button" aria-label="Notifications">Alerts <span id="badge"
+						hidden>0</span></button>
+				<button id="theme" class="btn" type="button" aria-label="Switch light or dark theme">Theme</button>
+				<a href="#settings" class="btn" aria-label="Profile and settings">Profile</a>
+			</header>
+			<main id="main" tabindex="-1"></main>
+		</div>
+	</div>
+	<div id="toasts" aria-live="polite"></div>
+</body>
+
+</html>
